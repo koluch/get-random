@@ -49,7 +49,7 @@ public class RandomTextServlet extends HttpServlet {
             for (int j = 0; j < wordLength; j++) {
                 writer.append((char) ('a' + (random.nextInt('z'-'a'+1))));
             }
-            if(i<wordCountParam-1) writer.append(' ');
+            if(i<wordCount-1) writer.append(' ');
         }
     }
 
